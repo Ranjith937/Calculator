@@ -1,0 +1,86 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.calculator {
+    background-color: rgb(28, 28, 28);
+    max-width: 55vh;
+    height: 90vh;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    height: 25vh;
+    width: inherit;
+    border-bottom: 2px solid red;
+    border-radius: inherit
+}
+
+.calculation {
+    color: white;
+    background-color: rgb(67, 63, 63);
+    width: 50vh;
+    height: 15vh;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#real-calc {
+    margin: 0;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    height: 65vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 75%;
+    height: 75%;
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.operators {
+    background-color: rgb(66, 62, 62);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+    transform: scale(0.98);
+}
+
+#equals {
+    background-color: rgb(189, 101, 1);
+}
